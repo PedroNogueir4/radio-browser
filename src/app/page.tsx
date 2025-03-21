@@ -1,6 +1,29 @@
+'use client'
+
+import { useEffect, useState } from "react";
+import Card from "@/components/card";
+import { Station } from "@/interfaces/Stations";
 import { AlignJustifyIcon } from "lucide-react";
 
+
 export default function Home() {
+  const [stations, setStations] = useState<Station[]>([]);
+
+  const fetchData = async () => {
+    await fetch("https://de1.api.radio-browser.info/json/stations/search?limit=10", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => setStations(data))
+      .catch((error) => {
+        console.error("Erro ao buscar estações:", error);
+      });
+  
+  }  
+  useEffect(() => {
+    fetchData()
+  }, []);
+  
   return (
     <div className="w-screen h-screen flex">
       <aside className="w-1/6 h-full p-3 bg-neutral-900">
@@ -18,6 +41,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {stations.map((station) => {
+            return <Card key={station.changeuuid} text={station.name} />;
+          })}
       </aside>
       <main className="w-full h-full bg-neutral-800"></main>
     </div>
