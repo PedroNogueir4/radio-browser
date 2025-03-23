@@ -82,6 +82,7 @@ export default function Home() {
                 toggleFavorite={toggleFavorite}
                 setStationPlaying={setStationPlaying}
                 stationPlaying={stationPlaying}
+                favorites={favorites}
               />
             );
           })}

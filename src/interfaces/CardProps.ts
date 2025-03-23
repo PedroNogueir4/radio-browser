@@ -5,4 +5,5 @@ export interface CardProps {
     toggleFavorite: (station: Station) => void;
     stationPlaying: Station | null;
     setStationPlaying: React.Dispatch<React.SetStateAction<Station | null>>;
+    favorites?:Station[] | null
   }
