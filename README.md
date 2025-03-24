@@ -1,44 +1,48 @@
 <<<<<<< HEAD
-# Radio Browser Challenge
 
-## Introdução
+# Projeto Rádio Nostalgia
 
-Este é um desafio para testar seus conhecimentos de Front-end;
+## Descrição
+Este projeto visa recriar a experiência de ouvir rádio online, permitindo que os usuários busquem, adicionem, editem e ouçam suas estações de rádio favoritas. A aplicação se conecta a uma API de rádio para fornecer acesso a várias estações e oferece funcionalidades de personalização para o usuário.
 
-O objetivo é avaliar a sua forma de estruturação e autonomia em decisões para construir algo escalável utilizando o Framework sugerido na vaga aplicada.
+## Tecnologias Usadas
+- **Linguagem**: TypeScript
+- **Framework**: Next.js
+- **CSS Framework**: Tailwind CSS
+- **Component Library**: Material UI (MUI)
+- **Ícones**: lucide-react icons
+- **API**: Rádio Browser API
 
-[SPOILER] As instruções de entrega e apresentação do challenge estão no final deste Readme (=
+## Funcionalidades
+1. **Adicionar rádio à lista**: O usuário pode adicionar uma estação à sua lista de rádios favoritas.
+2. **Visualizar lista de rádios**: O usuário pode ver as rádios que adicionou à sua lista.
+3. **Remover rádio da lista**: O usuário pode remover uma rádio da sua lista.
+4. **Editar rádio**: O usuário pode editar informações sobre a rádio selecionada.
+5. **Ouvir a rádio**: O usuário pode iniciar e parar a reprodução de uma rádio.
+6. **Pesquisar rádios**: O usuário pode buscar rádios por nome, país ou idioma.
 
-### Antes de começar
- 
-- O projeto deve utilizar a Linguagem e Framework específica na avaliação. Por exempo: Next.js, React.js, Nuxt.js, Vue.js, Angular e entre outras;
-- Considere como deadline da avaliação a partir do início do teste. Caso tenha sido convidado a realizar o teste e não seja possível concluir dentro deste período, avise a pessoa que o convidou para receber instruções sobre o que fazer.
-- Documentar todo o processo de investigação para o desenvolvimento da atividade (README.md no seu repositório); os resultados destas tarefas são tão importantes do que o seu processo de pensamento e decisões à medida que as completa, por isso tente documentar e apresentar os seus hipóteses e decisões na medida do possível.
+## Casos de Uso
+- Como usuário, posso adicionar uma rádio à minha lista.
+- Como usuário, posso ver minha lista de rádios adicionadas.
+- Como usuário, posso remover uma rádio da minha lista.
+- Como usuário, posso editar informações da rádio escolhida.
+- Como usuário, posso ouvir a rádio selecionada ao clicar no play.
+- Como usuário, posso parar de ouvir a rádio selecionada ao clicar no stop.
+- Como usuário, posso pesquisar a rádio que tenho interesse.
 
-## Case
+## Requisitos de Implementação
+- **Paginação**: Exibir 10 rádios por vez, com a possibilidade de filtrar por nome, país ou idioma.
+- **Persistência de Dados**: As rádios salvas pelo usuário devem ser mantidas entre as sessões.
+- **Base do Wireframe**: A estilização deve seguir o wireframe, mas pode ser adaptada conforme necessário.
 
-As pessoas estão com saudades de voltar nos tempos antigos e uma das melhores maneiras de solucionar esse problema é trazer a rádio de volta.
-Sua tarefa para esse case será desenvolver uma aplicação que consuma uma API de rádio para que os usuários possam desfrutar e relembrar desse tempo, seguindo os requisitos propostos neste desafio.
+## Processo de Desenvolvimento
 
-## Recursos
+Ao iniciar o desafio, meu objetivo foi utilizar as tecnologias mais atuais do mercado, nas quais já tenho experiência, por isso optei pelas ferramentas mencionadas anteriormente. No início do desenvolvimento, enfrentei um pequeno problema relacionado ao git: duas branches "master" foram criadas com históricos separados, mas isso não teve um impacto significativo no progresso do projeto.
 
-1. Estudar a documentação da REST API: https://de1.api.radio-browser.info/json/stations/search?limit=10
-2. Utilizar Frameworks CSS, recomendamos alguns como:
+Durante a implementação, foquei em criar um código bem estruturado, com o uso de interfaces e uma abordagem de componentização que garantisse clareza e facilidade de manutenção. Meu principal objetivo foi construir uma solução escalável e de fácil compreensão. Embora o desenvolvimento tenha sido bastante fluido, tomei algumas decisões importantes durante o processo, como remover elementos desnecessários da aplicação e implementar melhorias na experiência do usuário (UX). Por exemplo, adicionei funcionalidades como feedbacks de carregamento (loading) e mensagens de erro para uma navegação mais amigável, além de integrar as funcionalidades de play e pause de forma consistente em toda a aplicação.
 
-    - Tailwind CSS: https://tailwindcss.com/
-    - Material UI: https://material-ui.com/
-    - Angular Material: https://material.angular.io/
-    - Bootstrap: https://getbootstrap.com/
-    - Bulma: https://bulma.io/
-    - Outro de sua preferência
+Um dos maiores desafios enfrentados foi a indisponibilidade temporária da API da rádio, que ficou fora do ar por um tempo considerável. Isso me impediu de testar funcionalidades como a paginação e me causou um atraso de cerca de um dia no prazo que eu tinha estabelecido para concluir o desafio. No entanto, consegui resolver as questões rapidamente após a normalização da API.
 
-## Tela para Desktop
-
-![Desktop](assets/desktop.png)
-
-## Tela para Mobile
-
-![Mobile](assets/mobile.png)
 
 ## API
 
@@ -91,61 +95,16 @@ Exemplo da resposta:
 ]
 ```
 
-## Obrigatórios
-
-**Obrigatório 1 -** Você deverá atender aos seguintes casos de uso:
-
-- Como usuário, posso adicionar uma rádio na minha lista;
-- Como usuário, ver minha lista de rádios adicionadas;
-- Como usuário, posso remover uma rádio da minha lista;
-- Como usuário posso editar informações da rádio escolhida;
-- Como usuário, posso ouvir a rádio selecionado ao clicar o play;
-- Como usuário, posso parar de ouvir a rádio selecionada ao clicar no stop;
-- Como usuário, posso pesquisar a rádio que tenho interesse.
-
-**Obrigatório 2 -** Filtrar por nome da rádio, país ou idioma com paginação mostrando 10 rádios por vez.
-
-**Obrigatório 3 -** Salvar as informações para quando o usuário retornar na aplicação deve ter as rádios salvas.
-
-**Obrigatório 4 -** Seguir a base do [wireframe](https://www.figma.com/file/TDuhDdbwdzIVQjNV3GF9Qi/Radio?node-id=0%3A1) (estilização ao seu critério)
-
-## Extras
-
-Além do desafio proposto temos alguns diferenciais:
-
-**Diferencial 1 -** Escrever Unit Tests ou E2E Test. Escolher a melhor abordagem e biblioteca;
-
-**Diferencial 2 -** Configurar Docker no Projeto para facilitar o Deploy da equipe de DevOps;
-
-**Diferencial 3 -** Publique o projeto em alguma plataforma, como por exemplo a [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/) ou outra de sua preferência.
-
-## Readme do Repositório
-
-- Deve conter o título do projeto
-- Uma descrição sobre o projeto em frase
-- Deve conter uma lista com linguagem, framework e/ou tecnologias usadas
-- Como instalar e usar o projeto (instruções)
-- Não esqueça o [.gitignore](https://www.toptal.com/developers/gitignore)
-- Se está usando github pessoal, referencie que é um challenge by coodesh:  
-
 >  This is a challenge by [Coodesh](https://coodesh.com/)
 
-## Finalização e Instruções para a Apresentação
 
-1. Adicione o link do repositório com a sua solução no teste
-2. Adicione o link da apresentação do seu projeto no README.md.
-3. Verifique se o Readme está bom e faça o commit final em seu repositório;
-4. Envie e aguarde as instruções para seguir. Sucesso e boa sorte. =)
+## Como Rodar o Projeto
+### 1. Clone o repositório
+```bash
+git clone https://github.com/PedroNogueir4/radio-browser.git
+```
 
-## Suporte
-
-Use a [nossa comunidade](https://discord.gg/rdXbEvjsWu) para tirar dúvidas sobre o processo ou envie uma mensagem diretamente a um especialista no chat da plataforma. 
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+### 2. Execute o servidor:
 
 ```bash
 npm run dev
@@ -157,20 +116,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A aplicação estará disponível em http://localhost:3000.
 
 ## Deploy on Vercel
 
