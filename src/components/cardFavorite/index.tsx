@@ -15,7 +15,7 @@ const CardFavorite: React.FC<CardProps> = ({
 }) => {
   return (
     <>
-      <div className="flex justify-between w-full text-gray-900 bg-neutral-500 min-h-15 pl-3 pr-3 rounded-md mb-4 items-center">
+      <div className="flex flex-wrap justify-between w-full text-gray-900 bg-neutral-500 min-h-auto pl-3 pr-3 rounded-md mb-4 items-center overflow-hidden gap-3">
         <div className="flex gap-3 items-center">
           {stationPlaying?.changeuuid === station.changeuuid ? (
             <>
@@ -35,9 +35,9 @@ const CardFavorite: React.FC<CardProps> = ({
             </>
           )}
 
-          <div className="flex flex-col">
+          <div className="flex flex-col overflow-hidden">
             <p className="font-semibold text-2xl">{station.name}</p>
-            <p>
+            <p className="hidden sm:block">
               {station.country},{station.tags}
             </p>
           </div>
