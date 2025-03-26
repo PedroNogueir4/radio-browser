@@ -41,7 +41,7 @@ Ao iniciar o desafio, meu objetivo foi utilizar as tecnologias mais atuais do me
 
 Durante a implementação, foquei em criar um código bem estruturado, com o uso de interfaces e uma abordagem de componentização que garantisse clareza e facilidade de manutenção. Meu principal objetivo foi construir uma solução escalável e de fácil compreensão. Embora o desenvolvimento tenha sido bastante fluido, tomei algumas decisões importantes durante o processo, como remover elementos desnecessários da aplicação e implementar melhorias na experiência do usuário (UX). Por exemplo, adicionei funcionalidades como feedbacks de carregamento (loading) e mensagens de erro para uma navegação mais amigável, além de integrar as funcionalidades de play e pause de forma consistente em toda a aplicação.
 
-O maior desafio enfrentado tem sido a indisponibilidade da API da rádio, que está fora do ar até o momento. Essa situação tem impossibilitado a conclusão do projeto, pois ainda não consigo testar funcionalidades essenciais, como a paginação e o formulario de edição. Já se passaram dois dias desde que comecei a aguardar a normalização da API para finalizar o desenvolvimento.
+O maior desafio enfrentado foi a indisponibilidade da API da rádio, que está fora do ar até o momento. Essa situação impossibilitou a conclusão do projeto, pois não consegui desenvolver funcionalidades como a paginação e o formulario de edição. Já se passaram três dias desde que comecei a aguardar a normalização da API para finalizar o desenvolvimento.Entretando é possível ver pelo código a minha experiencia com as tecnologias e boas práticas de desenvolvimento
 
 
 ## API
